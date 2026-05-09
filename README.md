@@ -6,10 +6,6 @@
   <h1>西柚 - AI智能创作平台</h1>
   <p>轻量级 AI 助手，赋能每个人的智能创作之旅</p>
 
-[![GitHub Stars](https://img.shields.io/github/stars/aitaas/aitaas.cuser?style=social)](https://github.com/aitaas/aitaas.cuser/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forks/aitaas/aitaas.cuser?style=social)](https://github.com/aitaas/aitaas.cuser/network)
-[![GitHub Issues](https://img.shields.io/github/issues/aitaas/aitaas.cuser)](https://github.com/aitaas/aitaas.cuser/issues)
-[![License](https://img.shields.io/github/license/aitaas/aitaas.cuser)](LICENSE)
 [![Node Version](https://img.shields.io/badge/node-18%2B-green.svg)]()
 [![React Version](https://img.shields.io/badge/react-19.2%2B-blue.svg)]()
 [![Next Version](https://img.shields.io/badge/next-16.1%2B-black.svg)]()
@@ -117,10 +113,10 @@
 
 ```bash
 # 克隆项目
-git clone https://github.com/aitaas/aitaas.cuser.git
+git clone https://github.com/AITaaS-OS/CUser-Web.git
 
 # 进入项目目录
-cd aitaas.cuser
+cd CUser-Web
 
 # 安装依赖
 yarn install
@@ -134,7 +130,7 @@ yarn install
 yarn dev
 ```
 
-访问 http://localhost:3000 查看应用。
+访问 http://localhost:3000/cuser 查看应用。
 
 #### 桌面端开发
 
@@ -187,7 +183,7 @@ yarn tauri ios build
 ## 项目结构
 
 ```
-aitaas.cuser/
+CUser-Web/
 ├── app/                    # Next.js App Router
 │   ├── api/               # API 路由
 │   ├── components/        # 通用组件
@@ -245,41 +241,41 @@ export const themeConfig = {
 ### 角色扮演
 
 <div align="center">
-  <img src="./public/showcase/chat-role1.png" alt="角色选择" width="45%" style="margin: 10px;"/>
-  <img src="./public/showcase/chat-model.png" alt="模型配置" width="45%" style="margin: 10px;"/>
-  <img src="./public/showcase/chat1.png" alt="对话界面1" width="45%" style="margin: 10px;"/>
-  <img src="./public/showcase/chat2.png" alt="对话界面2" width="45%" style="margin: 10px;"/>
+  <img src="https://www.aitaas.cn/public/showcase/chat-role1.png" alt="角色选择" width="45%" style="margin: 10px;"/>
+  <img src="https://www.aitaas.cn/public/showcase/chat-model.png" alt="模型配置" width="45%" style="margin: 10px;"/>
+  <img src="https://www.aitaas.cn/public/showcase/chat1.png" alt="对话界面1" width="45%" style="margin: 10px;"/>
+  <img src="https://www.aitaas.cn/public/showcase/chat2.png" alt="对话界面2" width="45%" style="margin: 10px;"/>
 </div>
 
 ### 虚拟朋友
 
 <div align="center">
-  <img src="./public/showcase/video.png" alt="虚拟朋友" width="60%" />
+  <img src="https://www.aitaas.cn/public/showcase/video.png" alt="虚拟朋友" width="60%" />
 </div>
 
 ### 视频合成
 
 <div align="center">
-  <img src="./public/showcase/mv-shot.png" alt="视频合成" width="60%" />
+  <img src="https://www.aitaas.cn/public/showcase/mv-shot.png" alt="视频合成" width="60%" />
 </div>
 
 ### 视觉识别
 
 <div align="center">
-  <img src="./public/showcase/vision.png" alt="视觉识别" width="60%" />
+  <img src="https://www.aitaas.cn/public/showcase/vision.png" alt="视觉识别" width="60%" />
 </div>
 
 ### 一人公司
 
 <div align="center">
-  <img src="./public/showcase/opc.jpg" alt="一人公司" width="60%" />
+  <img src="https://www.aitaas.cn/public/showcase/opc.jpg" alt="一人公司" width="60%" />
 </div>
 
 ### 设置界面
 
 <div align="center">
-  <img src="./public/showcase/setting1.png" alt="设置1" width="45%" style="margin: 10px;"/>
-  <img src="./public/showcase/setting.png" alt="设置2" width="45%" style="margin: 10px;"/>
+  <img src="https://www.aitaas.cn/public/showcase/setting1.png" alt="设置1" width="45%" style="margin: 10px;"/>
+  <img src="https://www.aitaas.cn/public/showcase/setting.png" alt="设置2" width="45%" style="margin: 10px;"/>
 </div>
 
 ## 适用场景
@@ -291,36 +287,6 @@ export const themeConfig = {
 | **教育领域** | 智能辅导、语言学习、知识问答 |
 | **企业办公** | 文档处理、数据分析、流程自动化 |
 | **客服服务** | 智能问答、多语言支持、情感分析 |
-
-## 贡献指南
-
-我们非常欢迎社区贡献！如果你想为这个项目做出贡献，请遵循以下步骤：
-
-1. **Fork 本仓库**
-2. **创建功能分支**
-   ```bash
-   git checkout -b feature/AmazingFeature
-   ```
-3. **提交更改**
-   ```bash
-   git commit -m 'Add some AmazingFeature'
-   ```
-4. **推送到分支**
-   ```bash
-   git push origin feature/AmazingFeature
-   ```
-5. **提交 Pull Request**
-
-### 代码规范
-
-- 遵循 ESLint 规则
-- 使用 Prettier 格式化代码
-- 提交信息遵循 [Conventional Commits](https://www.conventionalcommits.org/) 规范
-- 确保所有测试通过
-
-### 报告问题
-
-请使用 [GitHub Issues](https://github.com/aitaas/aitaas.cuser/issues) 报告 Bug 或提出新功能建议。
 
 ## 常见问题
 
