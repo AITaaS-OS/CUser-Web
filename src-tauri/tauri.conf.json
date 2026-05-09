@@ -1,0 +1,76 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "AITaaS",
+  "mainBinaryName": "AITaaS",
+  "version": "1.0.0",
+  "identifier": "com.aitaas.app",
+  "build": {
+    "beforeBuildCommand": "yarn export",
+    "beforeDevCommand": "yarn export:dev",
+    "frontendDist": "../dist",
+    "devUrl": "http://localhost:3000/cuser"
+  },
+  "app": {
+    "withGlobalTauri": true,
+    "windows": [
+      {
+        "fullscreen": false,
+        "height": 600,
+        "resizable": true,
+        "title": "AITaaS",
+        "width": 960,
+        "hiddenTitle": true,
+        "titleBarStyle": "Overlay",
+        "url": "cuser",
+        "useHttpsScheme": false
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "homepage": "https://www.aitaas.cn",
+    "publisher": "AITaaS.CN",
+    "copyright": "2025, AITaaS All Rights Reserved.",
+    "longDescription": "融合文本、语音、图片和视频于一体的AI智能创作平台",
+    "shortDescription": "AI智能创作平台",
+    "targets": "all",
+    "createUpdaterArtifacts": true,
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico",
+      "icons/icon.png"
+    ],
+    "windows": {
+      "certificateThumbprint": null,
+      "digestAlgorithm": "sha256",
+      "timestampUrl": "",
+      "nsis": {
+        "languages": ["SimpChinese"],
+        "installerIcon": "./icons/icon.ico"
+      },
+      "wix":{
+          "language": "zh-CN" 
+      }
+    },
+    "android": {
+      "minSdkVersion": 24
+    }
+  },
+  "plugins": {
+    "updater": {
+      "windows": {
+        "installMode": "passive"
+      },
+      "endpoints": [
+        "https://www.aitaas.cn/public/release/smartclient/latest.json"
+      ],
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IEY1MzE5MkZEMjI3MjhFNUEKUldSYWpuSWkvWkl4OWI5S2VEYW9rZ3pxdDRuM3VEQ0NUZ2toNEJIbDNYTENoVXhTR1hZNHV5SkwK"
+    }
+  }
+}

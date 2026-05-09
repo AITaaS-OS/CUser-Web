@@ -1,0 +1,240 @@
+@import "../../styles/animation.scss";
+
+.video-page {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+
+  .video-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+
+    .visual-panel {
+      width: 90%;
+      height: 90%;
+
+      font-size: 12px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .video {
+        border-radius: 10px;
+        margin-top: 20px;
+      }
+
+      .pic {
+        border-radius: 10px;
+        margin-top: 20px;
+      }
+    }
+
+    .download-panel {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 9px;
+      max-width: 90vw;
+
+      .icon {
+        background-color: transparent;
+        border: none;
+        color: #666;
+        cursor: pointer;
+
+        :hover {
+          color: #fff;
+        }
+      }
+
+      a {
+        color: #666;
+      }
+    }
+  }
+
+  .flag-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    height: 60px;
+  }
+
+  .function-panel {
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .function-divider {
+      background-color: #333;
+    }
+
+    .function-button {
+      background-color: #333;
+      border: #fff;
+      color: #ccc;
+
+      div {
+        font-size: 12px;
+      }
+
+      :hover {
+        font-weight: bolder;
+      }
+    }
+  }
+
+  .video-action-panel {
+    background-color: #333;
+    width: 100%;
+    min-height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .video-action {
+      width: 100%;
+      min-height: 100px;
+      margin-top: 30px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
+      button {
+        width: 50px;
+        height: 50px;
+      }
+
+      .video-action-icon {
+        width: unset !important;
+        height: unset !important;
+        border: none;
+
+        svg {
+          width: 24px;
+          height: 24px;
+        }
+      }
+
+      .video-action-send {
+        border-radius: 30px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        cursor: pointer;
+      }
+
+      .video-action-start {
+        margin-left: 50px;
+        background-color: #fff;
+        border-radius: 30px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        cursor: pointer;
+        border: none;
+      }
+
+      .video-action-cancel {
+
+
+        margin-left: 50px;
+        background-color: #fff;
+        border-radius: 30px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        cursor: pointer;
+        border: none;
+
+      }
+
+      .video-action-call {
+        background-color: #000;
+        box-shadow: 0 0 4px silver;
+        border-radius: 30px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        cursor: pointer;
+      }
+
+      .video-action-hangup {
+        margin-right: 50px;
+        background-color: #c00;
+        border-radius: 30px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        cursor: pointer;
+
+        svg {
+          width: 32px;
+          height: 32px;
+        }
+      }
+    }
+  }
+
+
+  @media only screen and (max-width: 600px) {
+    .video-action-panel {
+      -webkit-clip-path: ellipse(0% 0% at 50% 0%);
+      clip-path: ellipse(70% 90% at 50% 100%);
+
+      .video-action-flag {
+        padding-top: 40px;
+      }
+
+      .video-action {
+        button {
+          width: 58px;
+          height: 58px;
+        }
+      }
+    }
+
+    .function-panel {
+      .function-button {
+        div {
+          font-size: 9px;
+        }
+      }
+    }
+  }
+}
+
+.custom-prompt {
+  display: flex;
+  flex-direction: column;
+  min-width: 40vw;
+  font-size: 14px;
+  flex: 1;
+  height: 100%;
+
+  .custom-title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+
+  .custom-text {
+    bottom: 0px;
+    resize: vertical;
+  }
+
+  .custom-desc {
+    padding-bottom: 10px;
+  }
+}

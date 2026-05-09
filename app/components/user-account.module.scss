@@ -1,0 +1,144 @@
+.payment {
+  font-size: 14px;
+  min-width: 40vw;
+
+  .info {
+    color: #cc0000;
+    font-weight: bolder;
+  }
+}
+
+.soa {
+  font-size: 14px;
+  min-width: 40vw;
+
+  .info {
+    color: #cc0000;
+    font-weight: bolder;
+  }
+
+  .soa-record-item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 12px;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    .left {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .right {
+      text-align: right;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+  }
+
+  .soa-record-search-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    flex: 1;
+  }
+
+  .soa-record-range-time {
+    width: 80px;
+    line-height: 32px;
+    font-size: 12px;
+  }
+
+  .soa-record-range-selector {
+    width: 100%;
+  }
+
+  .soa-record-search {
+    margin-left: 10px;
+  }
+
+  .soa-record-id {
+    width: 120px;
+  }
+
+  .soa-record-time {
+    width: 160px;
+  }
+
+  .soa-record-type {
+    width: 100px;
+  }
+
+  .soa-record-status {
+    width: 100px;
+  }
+
+  .soa-record-code {
+    width: 100px;
+  }
+
+  .soa-record-amount {
+    width: 120px;
+    color: green;
+    font-size: 12px;
+    font-weight: bolder;
+    text-align: right;
+  }
+
+  .soa-record-balance {
+    width: 120px;
+    color: #c00;
+    font-size: 12px;
+    font-weight: bolder;
+    text-align: right;
+  }
+
+  @media only screen and (max-width: 600px) {
+    min-width: unset;
+  }
+}
+
+.feedback {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  min-width: 40vw;
+
+  .feedback-desc {
+    margin: 10px 0;
+  }
+
+  .feedback-text {
+    resize: none;
+  }
+}
+
+.register {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  min-width: 40vw;
+
+  .verifycode {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    justify-content: end;
+    gap: 10px;
+
+    .verifycode-button {
+      min-width: 80px;
+    }
+
+    .verifycode-input {
+      width: 138px;
+    }
+  }
+}

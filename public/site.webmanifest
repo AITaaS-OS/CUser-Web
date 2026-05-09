@@ -1,0 +1,16 @@
+{
+  "name": "AITaaS",
+  "short_name": "AITaaS",
+  "icons": [
+    {
+      "src": "https://www.aitaas.cn/public/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/cuser",//此处路径要和next.config.mjs的BasePath配置项一致
+  "scope": ".",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}

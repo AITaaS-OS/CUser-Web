@@ -1,0 +1,7 @@
+#!/bin/sh
+. "$(dirname "$0")/husky.sh"
+
+# 执行lint-staged任务，一般是代码格式化和检查
+# 位置：package.json的lint-staged的配置
+# 依赖：husky,lint-staged等
+# npx --no-install lint-staged

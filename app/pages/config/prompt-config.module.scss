@@ -1,0 +1,156 @@
+.avatar {
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+.edit-prompt-modal {
+  display: flex;
+  flex-direction: column;
+
+  .edit-prompt-title {
+    max-width: unset;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+  .edit-prompt-content {
+    max-width: unset;
+  }
+}
+
+.user-prompt-modal {
+  min-height: 40vh;
+
+  .filter-text {
+    flex-grow: 1;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .filter-lang {
+    height: 100%;
+    margin-left: 10px;
+  }
+
+  .filter-action {
+    height: 100%;
+    margin-left: 10px;
+    box-sizing: border-box;
+    min-width: 80px;
+  }
+
+  .data-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+
+
+    &:not(:last-child) {
+      border-bottom: var(--border-in-light);
+    }
+
+    .data-item-info {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 100%;
+      flex: 1;
+
+      .item-header {
+        display: flex;
+        align-items: center;
+
+        .item-icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 10px;
+          width: 32px;
+          height: 32px;
+        }
+
+        .item-title {
+          display: flex;
+          align-items: center;
+
+          .item-name {
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+            vertical-align: middle;
+          }
+        }
+      }
+
+      .item-body {
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        vertical-align: middle;
+      }
+
+      .item-body-error {
+        color: red;
+      }
+    }
+
+    //数据操作按钮
+    .data-item-actions {
+      display: flex;
+      align-items: center;
+      column-gap: 2px;
+      padding-left: 20px;
+      padding-right: 10px;
+
+      .data-item-action {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+
+  .user-prompt-header {
+
+    .user-prompt-title {
+      font-size: 14px;
+      line-height: 2;
+      font-weight: bold;
+    }
+
+    .user-prompt-content {
+      font-size: 12px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .data-item {
+      display: flex;
+      flex-direction: column;
+
+      .data-item-info {
+        flex-direction: row;
+        flex: 1;
+
+        .item-body {
+          flex: 1;
+          align-items: end;
+          justify-content: end;
+          padding: 0 10px;
+        }
+      }
+
+      .data-item-actions {
+        justify-content: flex-end;
+      }
+    }
+  }
+}
+
+.subtitle-button {
+  button {
+    overflow: visible;
+  }
+}

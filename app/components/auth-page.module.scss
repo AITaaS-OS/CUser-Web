@@ -1,0 +1,25 @@
+.auth-page {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+
+  .auth-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    animation: slide-in-from-top ease 0.3s;
+  }
+
+  .auth-content {
+    margin-top: calc((100vh - 600px)/2);
+    background-color: var(--theme-color);
+    border-radius: 10px;
+    display: grid;
+    min-width: 50%;
+  }
+}

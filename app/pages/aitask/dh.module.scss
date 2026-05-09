@@ -1,0 +1,131 @@
+@import "@/app/styles/animation.scss";
+
+.p2v-dh-page {
+  display: flex;
+  flex-direction: column;
+
+  .task-prompt-list {
+    border: 0;
+  }
+
+  .create-text-list {
+    height: 20px;
+    min-height: 20px !important;
+    border: 0;
+    justify-content: end;
+
+    button {
+      margin-left: 20px;
+      font-size: 12px;
+    }
+  }
+
+  .create-text {
+    text-align: center;
+    height: 30px;
+    border-radius: 8px;
+  }
+
+  .dh-upload-image {}
+
+  .dh-upload-image-icon {
+    background-color: aqua;
+    width: 180px;
+    height: 320px;
+  }
+
+  .dh-upload-image-image {
+    background-color: aqua;
+  }
+
+
+
+
+
+  @media screen and (max-width: 600px) {
+    .create-text-list {
+      height: 20px;
+      min-height: 20px !important;
+      border: 0;
+      justify-content: space-between;
+
+      button {
+        margin-left: 0px;
+      }
+    }
+  }
+}
+
+.p2v-dh-edit-text {
+  width: 100%;
+  height: 100%;
+  min-width: 40vw;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: row;
+
+  textarea {
+    resize:none;
+  }
+}
+
+.markdown-body-bg {
+  background-color: #f2f2f2;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.prompt-hints {
+  min-height: 20px;
+  width: 100%;
+  max-height: 50vh;
+  overflow: auto;
+  display: flex;
+  flex-direction: column-reverse;
+
+  background-color: var(--white);
+  border: var(--border-in-light);
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: var(--shadow);
+
+  .prompt-hint {
+    color: var(--black);
+    padding: 6px 10px;
+    animation: slide-in ease 0.3s;
+    cursor: pointer;
+    transition: all ease 0.3s;
+    border: transparent 1px solid;
+    margin: 4px;
+    border-radius: 8px;
+
+    &:not(:last-child) {
+      margin-top: 0;
+    }
+
+    .hint-title {
+      font-size: 12px;
+      font-weight: bolder;
+
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .hint-content {
+      font-size: 12px;
+
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    &-selected,
+    &:hover {
+      border-color: var(--primary);
+    }
+  }
+}

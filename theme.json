@@ -1,0 +1,8 @@
+{
+  "token": {
+    "colorPrimary": "#cc0000",
+    "colorInfo": "#cc0000",
+    "borderRadius": 4,
+    "wireframe": true
+  }
+}

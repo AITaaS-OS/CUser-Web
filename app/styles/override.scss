@@ -1,0 +1,69 @@
+//复写antd的样式
+.ant-modal-content {
+  border-radius: 10px !important;
+}
+
+.ant-upload-select {
+  height: auto !important;
+  max-width: 99px !important;
+  min-height: 100px !important;
+  border-radius: 10px !important;
+
+  button {
+    background-color: #f2f2f2 !important;
+    border-radius: 10px !important;
+  }
+}
+
+.ant-upload-list-item-container {
+  height: auto !important;
+  padding: 0 !important;
+  max-width: 99px !important;
+  border-radius: 10px !important;
+}
+
+.ant-upload-list-item-image {
+  border-radius: 10px !important;
+}
+
+.ant-upload-list-item {
+  border-radius: 10px !important;
+  background-color: #f2f2f2;
+  height: auto !important;
+}
+
+.ant-upload-list-item-actions {
+  height: 100%;
+
+  a {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+    /* 将元素的顶部定位到父元素中心的50%位置 */
+    // top: 50%;
+
+    /* 将元素的左边定位到父元素中心的50%位置 */
+    // left: 50%;
+
+    /* 使用transform属性将元素向左和向上各偏移自身宽高的50% */
+    // transform: translate(-50%, -50%);
+
+  }
+
+  button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+}
+
+.ant-input-data-count {
+  bottom: 0 !important;
+  right: 5px !important;
+}
+
+.ant-card {
+  border-radius: 10px !important;
+  margin: 10px !important;
+}

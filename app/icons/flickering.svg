@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ccc" viewBox="0 0 32 32">
+<circle cx="15" cy="15" r="15" fill="var(--primary, red)">
+<animate attributeName="r" begin="0s" calcMode="linear" dur="1.0s" from="15" repeatCount="indefinite" to="15" values="15;9;15"/>
+<animate attributeName="fill-opacity" begin="0s" calcMode="linear" dur="1.0s" from="1" repeatCount="indefinite" to="1" values="1;.5;1"/>
+</circle>
+</svg>

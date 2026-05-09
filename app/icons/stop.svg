@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   t="1770347434191"
+   class="icon"
+   viewBox="0 0 1024 1024"
+   version="1.1"
+   p-id="39349"
+   width="20"
+   height="20"
+   id="svg1"
+   sodipodi:docname="stop.svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25" />
+  <path
+     d="m 225.28,153.6 h 573.44 c 39.63904,0 71.68,32.04096 71.68,71.68 v 573.44 c 0,39.63904 -32.04096,71.68 -71.68,71.68 H 225.28 c -39.63904,0 -71.68,-32.04096 -71.68,-71.68 V 225.28 c 0,-39.63904 32.04096,-71.68 71.68,-71.68 z"
+     fill="#cc0000"
+     p-id="39350"
+     id="path1"
+     style="stroke-width:1.12" />
+</svg>

@@ -1,0 +1,9 @@
+#!/bin/sh
+. "$(dirname "$0")/husky.sh"
+
+# Export Git hook params
+export GIT_PARAMS=$*
+
+# 验证提交信息规范
+# 依赖：yarn add @umijs/fabric -D
+npx --no-install fabric verify-commit
